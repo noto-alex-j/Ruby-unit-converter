@@ -1,0 +1,90 @@
+.body {
+	min-height: 100vh;
+	min-width: 100vw;
+	background-image: url("galaxy.jpg");
+	background-size: 100vw auto;
+	font-family: "Helvetica";
+}
+
+.title {
+	position: fixed;
+	color: white;
+	font-weight: lighter;
+	font-size: 100px;
+	width: 100vw;
+	text-align: center;
+}
+
+.converter {
+	position: fixed;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 350px;
+	background: rgba(0,0,0,0.5);
+}
+
+.form {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.input {
+	display: inline-block;
+	height: 50px;
+	width: 246px;
+	font-size: 24px;
+	border-radius: 6px;
+	outline: none;
+	background-color: #f1f1f1;
+}
+
+.select {
+	display: inline-block;
+	border: none;
+    background-color: #f1f1f1;
+    width: 247px;
+    height: 55px;
+    font-size: 24px;
+}
+
+.submit {
+	width: 500px;
+	background-color: #f1f1f1;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.output {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 80px;
+	font-weight: bolder;
+	width: 600px;
+	text-align: center;
+}
+
+#toUnitsks {
+	display: none;
+}
+
+#toUnitspk {
+	display: none;
+}
+
+#toUnitsps {
+	display: none;
+}
