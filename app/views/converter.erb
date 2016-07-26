@@ -4,7 +4,7 @@
 	<form class= "form" action="/" method="post">
 		<input type="text" name="input" class= "input">
 		<select name= "conversion" class= "select" id= "conversion">
-			<option value= ""></option>
+			<option value= "">Conversion</option>
 			<option value= "ftoc">Farenheit to Celsius</option>
 			<option value= "ctof">Celsius to Farenheit</option>
 			<option value= "mtok">Miles to Kilometers</option>
@@ -13,20 +13,11 @@
 			<option value= "kilos">Kilograms</option>
 			<option value= "stone">Stone</option>
 		</select>
-		<select name= "ks" class= "select" id= "toUnitsks">
-			<option value= ""></option>
-			<option value= "kilos">to Kilograms</option>
-			<option value= "stone">to Stone</option>
-		</select>
-		<select name= "pk" class= "select" id= "toUnitspk">
-			<option value= ""></option>
-			<option value= "pounds">to Pounds</option>
-			<option value= "kilos">to Kilograms</option>
-		</select>
-		<select name= "ps" class= "select" id= "toUnitsps">
-			<option value= ""></option>
-			<option value= "pounds">to Pounds</option>
-			<option value= "stone">to Stone</option>
+		<select name= "pks" class= "select" id= "weightUnits">
+			<option value= " ">Weight</option>
+			<option value= "pounds" id= "weightUnits__p">to Pounds</option>
+			<option value= "kilos" id= "weightUnits__k">to Kilograms</option>
+			<option value= "stone" id= "weightUnits__s">to Stone</option>
 		</select>
 		<input type="submit" name="submit" class= "submit" value="CONVERTILIZE!">
 	</form>

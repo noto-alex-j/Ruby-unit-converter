@@ -47,8 +47,26 @@ class Distance
 end
 
 class Weight
-	def initialize(input)
+	def initialize(conversion,input,pks)
+		@conversion = conversion
+		@pks = pks
 		@weight = input.to_f
+	end
+
+	def convert
+		if @conversion == "pounds" && @pks == "kilos"
+			self.poundsToKilograms
+		elsif @conversion == "pounds" && @pks == "stone"
+			self.poundsToStone
+		elsif @conversion == "kilos" && @pks == "pounds"
+			self.kilogramsToPounds
+		elsif @conversion == "kilos" && @pks == "stone"
+			self.kilogramsToStone
+		elsif @conversion == "stone" && @pks == "kilos"
+			self.stoneToKilograms
+		elsif @conversion == "stone" && @pks == "pounds"
+			self.stoneToPounds
+		end
 	end
 
 	def poundsToKilograms

@@ -1,9 +1,11 @@
 class ConversionAdapter
-  def initialize(conversion, input)
+  def initialize(conversion, input, pks)
     if conversion == "ftoc" || conversion == "ctof"
       @converter = Temperature.new(conversion, input)
     elsif conversion == "mtok" || conversion == "ktom"
       @converter = Distance.new(conversion, input)
+    elsif conversion == "pounds" || conversion == "kilos" || conversion == "stone"
+      @converter = Weight.new(conversion, input, pks)  
     end
   end
 

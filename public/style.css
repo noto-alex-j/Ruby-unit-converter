@@ -17,11 +17,11 @@
 
 .converter {
 	position: fixed;
-	top: 50vh;
+	top: 55vh;
 	left: 50vw;
 	transform: translate(-50%, -50%);
 	width: 600px;
-	height: 350px;
+	height: 400px;
 	background: rgba(0,0,0,0.5);
 }
 
@@ -77,14 +77,8 @@
 	text-align: center;
 }
 
-#toUnitsks {
+#weightUnits {
 	display: none;
 }
 
-#toUnitspk {
-	display: none;
-}
 
-#toUnitsps {
-	display: none;
-}

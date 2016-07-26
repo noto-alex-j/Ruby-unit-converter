@@ -4,8 +4,10 @@ end
 
 MyApp.post "/" do
 	if !params[:conversion].nil?
-		@conversion = ConversionAdapter.new(params[:conversion], params[:input])
+		@conversion = ConversionAdapter.new(params[:conversion], params[:input], params[:pks])
 	end
+
+
 
 	# No need to define separate variables for the conversion type or the
 	# input, because they're stored in @conversion now. I can create getter
