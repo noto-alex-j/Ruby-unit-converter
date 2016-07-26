@@ -1,6 +1,16 @@
 class Temperature
-	def initialize(input)
+	def initialize(conversion, input)
+		@conversion = conversion
 		@temp = input.to_i
+	end
+
+	# This is the method which the ConversionAdapter calls.
+	def convert
+		if @conversion == "ftoc"
+			self.farenheitToCelsius
+		elsif @conversion == "ctof"
+			self.celsiusToFarenheit
+		end
 	end
 
 	def farenheitToCelsius
@@ -13,8 +23,18 @@ class Temperature
 end
 
 class Distance
-	def initialize(input)
+	def initialize(conversion, input)
+		@conversion = conversion
 		@distance = input.to_f
+	end
+
+	# This is the method which the ConversionAdapter calls.
+	def convert
+		if @conversion == "mtok"
+			self.milesToKilometers
+		elsif @conversion == "ktom"
+			self.kilometersToMiles
+		end
 	end
 
 	def milesToKilometers
