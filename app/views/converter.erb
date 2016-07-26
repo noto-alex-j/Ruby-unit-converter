@@ -30,7 +30,10 @@
 		</select>
 		<input type="submit" name="submit" class= "submit" value="CONVERTILIZE!">
 	</form>
-	<div class= "output"><%= @output %></div>
+
+	<% if @conversion %>
+		<div class= "output"><%= @conversion.result %></div>
+	<% end %>
 </div>
 
 
